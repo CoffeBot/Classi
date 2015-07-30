@@ -1,0 +1,29 @@
+import java.util.Vector;
+
+public class Proposta {
+
+  public int userID;
+  public String testo;
+  public int prezzo;
+  public boolean approvazione;
+  public Abitazione info;
+  public Boolean tipo;
+  public Vector  myGestoreProposte;
+  
+  public Proposta(int userID, String testo, int prezzo, boolean approvazione, Abitazione info, boolean tipo, Vector  myGestoreProposte){
+      
+	  this.userID=userID;
+	  this.testo=testo;
+	  this.prezzo=prezzo;
+	  this.approvazione=approvazione;
+	  this.info=info;
+	  this.tipo=tipo;
+	  this.myGestoreProposte=myGestoreProposte;
+        
+  }
+
+  public void ContattaAgente( Proposta) {
+  /* In questa classe verrà inserito il funzionamento di contatta agente. Verrà inviata una proposta definita dall'utente ad un agente. */
+  }
+
+}
