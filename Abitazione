@@ -1,0 +1,26 @@
+import java.util.Vector;
+
+public class Abitazione {
+
+	public int nVani;
+	public String via;
+	public int mq;
+	public int piano;
+	public int identificatore;
+	public Vector  myZona;
+	public Vector  myMessaggio;
+	public Vector  myAnnuncio;
+	
+	public Abitazione(int nVani, String via, int mq, int piano,	int identificatore,	Vector  myZona,	Vector  myMessaggio, Vector  myAnnuncio){
+        
+        this.nVani=nVani;
+		this.via=via;
+		this.mq=mq;
+		this.piano=piano;
+		this.identificatore=dentificatore;
+		this.myZona=myZona;
+		this.myMessaggio=myMessaggio;
+		this.myAnnuncio=myAnnuncio; 
+    }
+
+}
