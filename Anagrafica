@@ -1,0 +1,17 @@
+import java.util.Vector;
+
+public abstract class Anagrafica{
+    
+    public String nome;
+    public String cognome;
+    public String email;
+    public String codiceFiscale;
+	public int telefono; 
+        
+    public Anagrafica( String nome, String cognome, String email, String codiceFiscale, int telefono){
+    this.email=email;
+    this.codiceFiscale=codiceFiscale;
+    this.nome=nome;
+    this.cognome=cognome;
+	this.telefono=telefono;
+    }
