@@ -1,0 +1,13 @@
+# Classi
+
+package immobiliare;
+
+public class Utente extends Anagrafica
+{
+
+  public Utente();
+  {
+  
+  }
+
+{
