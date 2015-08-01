@@ -14,12 +14,19 @@ public class GestoreAutenticazione
 
     public static void registrazione()
     {
-    
+           System.out.println("1)Benvenuto: Immetti i tuoi dati: user o agente \n"); //controllo tipo di persona che si registra
+        String nome;
+        Scanner scan = new Scanner(System.in); //prende l'input 
+        nome = scan.nextLine();
+
+        if (nome.equals("user")) {
+            UtenteRegistrato utenteRegistrato=new UtenteRegistrato("user","user","fhdhf","user@user","visa");
+            utentiregistrati.add(utenteRegistrato); //aggiunta dell'utente nella lista di utenti registrati
     }
     
     public static void login()
     {
-         System.out.println("1)Benvenuto: Immetti i tuoi dati: user o admin \n"); //controllo tipo di persona che accede
+         System.out.println("1)Benvenuto: Immetti i tuoi dati: user o agente \n"); //controllo tipo di persona che accede
         String nome;
         Scanner scan = new Scanner(System.in); //prende l'input 
         nome = scan.nextLine();
