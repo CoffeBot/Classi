@@ -1,1 +1,18 @@
+package immobiliare;
+import java.util.Vector;
 
+public class Annuncio {
+
+  private Abitazione acratteristica;
+  public Int prezzo;
+  public String contatti;
+  public Varie;
+
+  public Vector  myAccumulatoreAnnunci;
+  public Vector  myMessaggio;
+  public Vector  myAbitazione;
+
+  public void ContattaAgente( Messaggio) {
+  }
+
+}
