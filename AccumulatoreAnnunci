@@ -1,12 +1,43 @@
+package immobiliare;
+import java.util.Vector;
+ import java.util.ArrayList;
 
-package immobiliare
+public class AccumulatoreAnnunci {
 
-public class AccumulatoreAnnunci
-{
+    public static ArrayList<Annuncio> listaAnnuncio=new ArrayList<Annuncio>();//lista degli annunci
+    
+    
+    public static void annuncio(Abitazione abitazione,Prezzo p, Contatti c){//prenota una determinata auto in una filiale
+        Annuncio a=new Annuncio();
+        p.setAbitazione(abitazione);
+        p.setPrezzo(p);
+		p.setcontatti(c);
+        aggiungiAnnuncio(a); // aggiungo l'annuncio alla lista
+        DittaAutonoleggio.getInstance().parco.rimuoviAuto(auto); // rimuovo l'auto dal parco auto se parco auto non vuoto
+        
+    }
+    public static void aggiungiPrenotazione(Prenotazione p){ //aggiungo prenotazioni alla lista
+    listaPrenotazione.add(p);
+    }
+     public static void annullaPrenotazione(Prenotazione p){ //rimuovo la prenotazione dalla lista
+          GestorePrenotazioni.listaPrenotazione.remove(p);
+          DittaAutonoleggio.getInstance().getLista().add(p.idAuto); //aggiungo di nuovo l'auto alla lista
+    
+    }
 
-  public AccumulatoreAnnunci()
-  {
-   this.*;
+  public Annuncio Annunci;
+
+    public Vector  myZona;
+    public Vector  myAnnuncio;
+
+  public void Inserisci( Annuncio) {
   }
 
+  public void Revisiona( Annuncio) {
+  }
+
+  public void Rimuovi( Annuncio) {
+  }
+
+  
 }
