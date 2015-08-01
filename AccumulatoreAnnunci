@@ -6,31 +6,26 @@ import java.util.ArrayList;
 public class AccumulatoreAnnunci {
 
 	public Annuncio annunci;
-
-    public Vector  myZona;
-    public Vector  myAnnuncio;
+	
+	public Vector  myZona;
+	public Vector  myAnnuncio;
 	
 	public static ArrayList<Annuncio> listaAnnuncio=new ArrayList<Annuncio>();//lista degli annunci
-    
-    /*public static void annuncio(Abitazione abitazione,Prezzo p, Contatti c){//prenota una determinata auto in una filiale
-        Annuncio a=new Annuncio();
-        p.setAbitazione(abitazione);
-        p.setPrezzo(p);
-	p.setcontatti(c);
-        aggiungiAnnuncio(a); // aggiungo l'annuncio alla lista
-        DittaAutonoleggio.getInstance().parco.rimuoviAuto(auto); // rimuovo l'auto dal parco auto se parco auto non vuoto
-    }*/
-    
-    public static void Inserisci(Annuncio p) //aggiungo annuncio alla lista
-    { 
-    	listaAnnunci.add(p);
-    }
-    public static void Rimuovi(Annuncio p){ //rimuovo la prenotazione dalla lista
-    	AccumulatoreAnnunci.listaAnnunci.remove(p);
-    }
-
-  public void Revisiona( Annuncio) {
-  
-  }
+	
+	
+	public static void Inserisci(Annuncio p) //aggiungo annuncio alla lista
+	{ 
+		listaAnnunci.add(p);
+	}
+	
+	public static void Rimuovi(Annuncio p) //rimuovo la prenotazione dalla lista
+	{ 
+		AccumulatoreAnnunci.listaAnnunci.remove(p);
+	}
+	
+	public void Revisiona(Annuncio p)
+	{
+		AccumulatoreAnnunci.edit(p);
+	}
   
 }
