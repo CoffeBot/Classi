@@ -21,16 +21,16 @@ public class AccumulatoreAnnunci {
         DittaAutonoleggio.getInstance().parco.rimuoviAuto(auto); // rimuovo l'auto dal parco auto se parco auto non vuoto
     }*/
     
-    public static void Inserisci(Annuncio p){ //aggiungo prenotazioni alla lista
-    listaAnnunci.add(p);
+    public static void Inserisci(Annuncio p) //aggiungo annuncio alla lista
+    { 
+    	listaAnnunci.add(p);
     }
     public static void Rimuovi(Annuncio p){ //rimuovo la prenotazione dalla lista
-          AccumulatoreAnnunci.listaAnnunci.remove(p);
-          //DittaAutonoleggio.getInstance().getLista().add(p.idAuto); //aggiungo di nuovo l'auto alla lista
-    
+    	AccumulatoreAnnunci.listaAnnunci.remove(p);
     }
 
   public void Revisiona( Annuncio) {
+  
   }
   
 }
