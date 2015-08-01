@@ -11,7 +11,7 @@ public class AccumulatoreAnnunci {
         Annuncio a=new Annuncio();
         p.setAbitazione(abitazione);
         p.setPrezzo(p);
-		p.setcontatti(c);
+	p.setcontatti(c);
         aggiungiAnnuncio(a); // aggiungo l'annuncio alla lista
         DittaAutonoleggio.getInstance().parco.rimuoviAuto(auto); // rimuovo l'auto dal parco auto se parco auto non vuoto
         
