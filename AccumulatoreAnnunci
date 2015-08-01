@@ -1,11 +1,16 @@
 package immobiliare;
+
 import java.util.Vector;
- import java.util.ArrayList;
+import java.util.ArrayList;
 
 public class AccumulatoreAnnunci {
 
-    public static ArrayList<Annuncio> listaAnnuncio=new ArrayList<Annuncio>();//lista degli annunci
-    
+	public Annuncio annunci;
+
+    public Vector  myZona;
+    public Vector  myAnnuncio;
+	
+	public static ArrayList<Annuncio> listaAnnuncio=new ArrayList<Annuncio>();//lista degli annunci
     
     /*public static void annuncio(Abitazione abitazione,Prezzo p, Contatti c){//prenota una determinata auto in una filiale
         Annuncio a=new Annuncio();
@@ -16,20 +21,14 @@ public class AccumulatoreAnnunci {
         DittaAutonoleggio.getInstance().parco.rimuoviAuto(auto); // rimuovo l'auto dal parco auto se parco auto non vuoto
     }*/
     
-    
     public static void Inserisci(Annuncio p){ //aggiungo prenotazioni alla lista
     listaAnnunci.add(p);
     }
-     public static void Rimuovi(Annuncio p){ //rimuovo la prenotazione dalla lista
-          GestorePrenotazioni.listaPrenotazione.remove(p);
-          DittaAutonoleggio.getInstance().getLista().add(p.idAuto); //aggiungo di nuovo l'auto alla lista
+    public static void Rimuovi(Annuncio p){ //rimuovo la prenotazione dalla lista
+          AccumulatoreAnnunci.listaAnnunci.remove(p);
+          //DittaAutonoleggio.getInstance().getLista().add(p.idAuto); //aggiungo di nuovo l'auto alla lista
     
     }
-
-  public Annuncio Annunci;
-
-    public Vector  myZona;
-    public Vector  myAnnuncio;
 
   public void Revisiona( Annuncio) {
   }
