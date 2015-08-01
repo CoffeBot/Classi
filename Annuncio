@@ -1,26 +1,32 @@
 package immobiliare;
 import java.util.Vector;
 
-public class Annuncio {
+public class Annuncio{
 
   private Abitazione caratteristica;
-  public Int prezzo;
+  public int prezzo;
   public String contatti;
-  public Varie;
+  public Varie[] cose; //conterrà immagini relative all'abitazione
 
   public Vector  myAccumulatoreAnnunci;
   public Vector  myMessaggio;
   public Vector  myAbitazione;
 
-  public void ContattaAgente( Messaggio) {
+  public Annuncio ( Abitazione caratteristica, int prezzo, String contatti, Varie, 
+        Vector  myAccumulatoreAnnunci, Vector  myMessaggio, Vector  myAbitazione)
+  {
+    this.caratteristica=caratteristica;
+    this.prezzo=prezzo;
+    this.contatti=contatti;
+    this.Varie=varie;
+    this.myAccumulatoreAnnunci=myAccumulatoreAnnunci;
+    this.myMessaggio=myMessaggio;
+    this.myAbitazione=myAbitazione;
+    
   }
-  
-    public void setAbitazione(Abitazione caratteristica){ //specifico quale casa è stata prenotata
-      this.idAuto=auto;
-  }
-
-  public void setUtente(Utente utente){ //secifico quale utente ha prenotato una determinata casa
-      this.idUtente=utente;
+  public void ContattaAgente(Messaggio u) 
+  {
+    Annunci.ContattaAgente.send(u);
   }
 
 }
