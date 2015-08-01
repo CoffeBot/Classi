@@ -3,7 +3,7 @@ import java.util.Vector;
 
 public class Annuncio {
 
-  private Abitazione acratteristica;
+  private Abitazione caratteristica;
   public Int prezzo;
   public String contatti;
   public Varie;
@@ -13,6 +13,14 @@ public class Annuncio {
   public Vector  myAbitazione;
 
   public void ContattaAgente( Messaggio) {
+  }
+  
+    public void setAbitazione(Abitazione caratteristica){ //specifico quale casa è stata prenotata
+      this.idAuto=auto;
+  }
+
+  public void setUtente(Utente utente){ //secifico quale utente ha prenotato una determinata casa
+      this.idUtente=utente;
   }
 
 }
