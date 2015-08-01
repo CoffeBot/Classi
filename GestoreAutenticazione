@@ -20,8 +20,8 @@ public class GestoreAutenticazione
         nome = scan.nextLine();
 
         if (nome.equals("user")) {
-            UtenteRegistrato utenteRegistrato=new UtenteRegistrato("user","user","fhdhf","user@user","visa");
-            utentiregistrati.add(utenteRegistrato); //aggiunta dell'utente nella lista di utenti registrati
+            Utente utente=new Utente("user","user","fhdhf","user@user","visa");
+                utenti.add(utente); //aggiunta dell'utente nella lista di utenti
     }
     
     public static void login()
