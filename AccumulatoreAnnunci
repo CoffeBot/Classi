@@ -1,0 +1,13 @@
+# Classi
+
+package immobiliare;
+
+public class AccumulatoreAnnunci
+{
+
+  public AccumulatoreAnnunci()
+  {
+   this.*;
+  }
+
+}
