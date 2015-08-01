@@ -1,2 +1,21 @@
-# Classi
-prova di progetto 1
+import java.util.Vector;
+
+public class GestoreProposte {
+
+  public PropostaAnnuncioAffitto ProposteAnnuncioAffitto;
+
+  public PropostaAnnuncioAcquisto PropostaAnnuncioAcquisto;
+
+    public Vector  myUtente;
+    public Vector  myProposta;
+
+  public void Giudica( Proposta) {
+  }
+
+  public void Approva( Proposta) {
+  }
+
+  public void Rifiuta( Proposta) {
+  }
+
+}
