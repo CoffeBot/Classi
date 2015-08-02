@@ -5,12 +5,12 @@ public abstract class Anagrafica{
     public String nome;
     public String cognome;
     public String email;
-    public String codiceFiscale;
+    public String codiceFiscale;//inutile
 	public int telefono; 
         
     public Anagrafica( String nome, String cognome, String email, String codiceFiscale, int telefono){
     this.email=email;
-    this.codiceFiscale=codiceFiscale;
+    this.codiceFiscale=codiceFiscale;//come sopra
     this.nome=nome;
     this.cognome=cognome;
 	this.telefono=telefono;
