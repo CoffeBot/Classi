@@ -10,5 +10,7 @@ public class UtenteValidato extends Utente
         this.isValidato=isValidato;
     }
     
-    /*il valore di isValidato può essere modificato dal metodo registrazione*/
+    /*il valore di isValidato può essere modificato dal metodo login, rendendolo true
+     *e dal metodo logout, rendendolo false*/
+     
 }
