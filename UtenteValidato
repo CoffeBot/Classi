@@ -1,7 +1,5 @@
 package immobiliare;
 
-import java.array
-
 public class UtenteValidato extends Utente
 {
     package boolean isValidato;
@@ -9,6 +7,8 @@ public class UtenteValidato extends Utente
     public UtenteValidato(boolean isValidato)
     {
         super(String nome, String cognome, String email, int telefono, int userID);
+        this.isValidato=isValidato;
     }
     
+    /*il valore di isValidato può essere modificato dal metodo registrazione*/
 }
