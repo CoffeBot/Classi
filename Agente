@@ -1,11 +1,12 @@
 public class Agente extends Anagrafica {
 	public int codiceAgente;
 	
-	public Agente(String nome,String cognome,String email, String codiceFiscale, int telefono, int codiceAgente) {
-        super(nome, cognome, email, codiceFiscale, telefono);
+	public Agente(String nome,String cognome,String email, int telefono, int codiceAgente) {
+        super(nome, cognome, email, telefono);
 		this.codiceAgente=codiceAgente;
 	}
-  public void ContattaCliente() {
+  public void ContattaCliente() 
+  {
   /* Questo metodo permetterà all'agente di risalire ai dati del cliente per poi contattarlo successivamente. */
   }
 
