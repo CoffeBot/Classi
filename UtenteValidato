@@ -9,8 +9,4 @@ public class UtenteValidato extends Utente
         super(String nome, String cognome, String email, int telefono, int userID);
         this.isValidato=isValidato;
     }
-    
-    /*il valore di isValidato può essere modificato dal metodo login, rendendolo true
-     *e dal metodo logout, rendendolo false*/
-     
 }
