@@ -1,0 +1,42 @@
+package immobiliare;
+
+import java.util.Scanner;
+
+public class Selettore {
+	public Servizi servizio;
+	public Zona zone;
+	
+	public Selettore(Servizi servizio, Zona zone){
+		this.servizio = servizio;
+		this.zone = zone;
+	}
+
+	/*metodi*/
+	public static int selezionaServizio()
+	{
+	    int[] serviziScelti;
+	    int tipoServizio;
+	    int f=0;
+	    while(scanFlag=="Si" || scanFlag=="s" || scanFlag=="si")
+	    {
+    	    System.out.println("Servizi in zona:\n 1)Parchi\t 2)Scuole\t 3)Medici\t 4)Ristorant\n /*altri servizi*/");
+    	    Scanner scanServ= new Scanner(System.in);
+    	    tipoServizio=scanServ.nextline();
+    	    System.out.println("vuoi selezionare altri servizi?\n Si\t No\n");
+    	    String flag;
+    	    Scanner scanFlag = new Scanner(System.in);
+    	    continua=scanFlag();
+	        int[f]=tipoServizio;
+	        f++;
+	    }
+	       return serviziScelti;
+	} 
+	
+	public static int selezionaZona()
+	{
+	    //Vedi sopra
+	    int sceltaZona;
+	    System.out.println("Servizi in zona:\n 1)Parchi\t 2)Scuole\t 3)Medici\t 4)Ristoranti /*altri servizi*/");
+	    Scanner sel_servizio= new scanner(System.in);
+	}
+}
