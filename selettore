@@ -12,6 +12,15 @@ public class Selettore {
 	}
 
 	/*metodi*/
+	public static int selezionaZona()
+	{
+	    int sceltaZona;
+	    System.out.println("Seleziona zona:\n 1)Quartiere periferia\t 2))Quartiere centro\t /*altre zone*/");
+	    Scanner sel_zona= new scanner(System.in);
+	    sceltaZona=sel_zona();
+	    return sceltaZona;
+	}
+	
 	public static int selezionaServizio()
 	{
 	    int[] serviziScelti;
@@ -32,11 +41,4 @@ public class Selettore {
 	       return serviziScelti;
 	} 
 	
-	public static int selezionaZona()
-	{
-	    //Vedi sopra
-	    int sceltaZona;
-	    System.out.println("Servizi in zona:\n 1)Parchi\t 2)Scuole\t 3)Medici\t 4)Ristoranti /*altri servizi*/");
-	    Scanner sel_servizio= new scanner(System.in);
-	}
 }
