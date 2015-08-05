@@ -1,0 +1,12 @@
+package immobiliare;
+
+public class UtenteValidato extends Utente
+{
+    package boolean isValidato;
+    
+    public UtenteValidato(boolean isValidato)
+    {
+        super(String nome, String cognome, String email, int telefono, int userID);
+        this.isValidato=isValidato;
+    }
+}

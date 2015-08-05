@@ -1,0 +1,12 @@
+package immobiliare;
+
+public class UtenteRgistrato
+{
+    public boolean isRegistrato;
+    
+    public UtenteRegistrato(boolean isRegistrato)
+    {
+        super(String nome, String cognome, String email, int telefono);
+        this.isRegistrato=isRegistrato;
+    }
+}

@@ -1,0 +1,37 @@
+package immobiliare;
+
+import java.util.Vector;
+
+public class GestoreProposte extends Annuncio
+{
+
+  public PropostaAnnuncioAffitto ProposteAnnuncioAffitto;
+  public PropostaAnnuncioAcquisto ProposteAnnuncioAcquisto;
+  public Vector  myUtente;
+  public Vector  myProposta;
+  
+  public static ArrayList<Proposta> listaProposte=new ArrayList<Proposta>();//lista delle proposte pendenti
+  
+  public void Giudica( Proposta f) 
+  {
+  	immobiliare.Agente.view (f);// l'agente visualizza le proposte pendenti
+  	
+  	/*azione svolta dall'uomo, semplicemente esplicativa.
+  	 *se agente interessato, si entrerà in giudica e verrà contattato l'utente.
+  	  *per interessato, s'intende l'agente che è interessato all'abitazione ma non alle condizioni utente*/
+  	immobiliare.Agente.contattaUtente( f);
+  }
+
+  public void Approva( Proposta f) 
+  {
+  	AccumulatoreAnnunci.listaAnnunci.add(f); 
+  	GestoreProposte.listaProposte.remove(f);
+  }
+
+  public void Rifiuta( Proposta f) 
+  {
+  	GestoreProposte.listaProposte.remove(f);
+  	immobiliare.Agente.contattaUtente("grazie del suo tempo, non possiamo aiutarla");
+  }
+
+}

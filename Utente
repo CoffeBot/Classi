@@ -4,10 +4,12 @@ package immobiliare;
 
 public class Utente extends Anagrafica
 {
+	public int userID;
+  	
+  	public Utente (int userID)
+  	{
+  		super (String nome, String cognome, String email, int telefono );
+  		this.userID=userID;
+  	}
 
-  public Utente();
-  {
-  
-  }
-
-{
+}
