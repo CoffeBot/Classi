@@ -1,0 +1,18 @@
+package immobiliare;
+
+public class Zona {
+   
+    public  String ID;
+    public  String citta;
+    public  Abitazione abitazione;
+    public  Integer CAP;
+	
+    public Zona(String ID, String citta,Abitazione abitazione, Integer CAP){
+      
+      this.ID=ID;
+      this.citta=citta;
+      this.abitazione=abitazione;
+	  this.CAP=CAP;
+  
+  }
+    } 
