@@ -1,0 +1,17 @@
+package immobilare;
+
+public class Servizi
+{
+
+	private Integer ID_tipo;
+	private String indirizzo;
+	private Integer distanza;
+
+	public Servizi(Integer ID_tipo, String indirizzo, Integer distanza)
+	{
+		this.ID_tipo = new Integer(ID_tipo);
+		this.indirizzo = new String(indirizzo);
+		this.distanza = new Integer(distanza);
+	}
+	
+}
