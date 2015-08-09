@@ -2,16 +2,16 @@ package immobiliare;
 
 public class Zona {
    
-    public  String ID;
+    public  String iD;
     public  String citta;
     public  Abitazione abitazioni;
-    public  int CAP;
+    public  int cap;
 	
-    public Zona(String ID, String citta,Abitazione abitazioni, int CAP)
+    public Zona(String ID, String citta,Abitazione abitazioni, int cap)
     {
-	    this.ID=ID;
+	    this.iD=iD;
 	    this.citta=citta;
 	    this.abitazioni=abitazioni;
-		this.CAP=CAP;
+		this.cap=cap;
   	}
 } 
