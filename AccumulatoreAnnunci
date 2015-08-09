@@ -25,7 +25,7 @@ public class AccumulatoreAnnunci {
 	
 	public void Revisiona(Annuncio p)
 	{
-		AccumulatoreAnnunci.edit(p);
+		AccumulatoreAnnunci.listaAnnunci.edit(p);
 	}
   
 }
