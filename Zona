@@ -5,9 +5,9 @@ public class Zona {
     public  String ID;
     public  String citta;
     public  Abitazione abitazioni;
-    public  Integer CAP;
+    public  int CAP;
 	
-    public Zona(String ID, String citta,Abitazione abitazioni, Integer CAP)
+    public Zona(String ID, String citta,Abitazione abitazioni, int CAP)
     {
 	    this.ID=ID;
 	    this.citta=citta;
