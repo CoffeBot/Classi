@@ -4,15 +4,14 @@ public class Zona {
    
     public  String ID;
     public  String citta;
-    public  Abitazione abitazione;
+    public  Abitazione abitazioni;
     public  Integer CAP;
 	
-    public Zona(String ID, String citta,Abitazione abitazione, Integer CAP){
-      
-      this.ID=ID;
-      this.citta=citta;
-      this.abitazione=abitazione;
-	  this.CAP=CAP;
-  
-  }
-    } 
+    public Zona(String ID, String citta,Abitazione abitazioni, Integer CAP)
+    {
+	    this.ID=ID;
+	    this.citta=citta;
+	    this.abitazioni=abitazioni;
+		this.CAP=CAP;
+  	}
+} 
