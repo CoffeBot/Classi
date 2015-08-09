@@ -11,8 +11,8 @@ public class Abitazione {
 	public Vector  myMessaggio;
 	public Vector  myAnnuncio;
 	
-	public Abitazione(int nVani, String via, int mq, int piano,	int identificatore,
-					int zonaC,	Vector  myMessaggio, Vector  myAnnuncio)
+	public Abitazione(int nVani, String via, int mq, int piano, int identificatore,
+		int zonaC, Vector  myMessaggio, Vector  myAnnuncio)
 	{
 		this.nVani=nVani;
 		this.via=via;
