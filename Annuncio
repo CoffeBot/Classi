@@ -7,6 +7,7 @@ public class Annuncio{
   public int prezzo;
   public String contatti;
   public Varie[] cose; //conterrà immagini relative all'abitazione
+  public int[] serviziScelti;
 
   public Vector  myAccumulatoreAnnunci;
   public Vector  myMessaggio;
