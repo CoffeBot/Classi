@@ -14,17 +14,28 @@ public class AccumulatoreAnnunci {
 
 	/*costruttori utili (?)
 	 * 1° campo: numero vani, 3° metratura, 4° piano, 5°ID, 6° cap, che verrà usato anche come riferimento zona,
-	 * 7° prezzo.*/
-	
-	
-	Annuncio casa1= new Annuncio((4, "via Qualcosa 5", 180, 0, 401800, 09100), 500000, "agente47@axolotl.com, 333657654"
-        /*, il campo varie è facoltativo, composto da immagini*/);
+	 * 7° prezzo. l'ultimo campo invece mostra i servizi in zona per l'abitazione*/
+
+	//annunci zona 1
+	Annuncio casa01= new Annuncio((4, "via Qualcosa 5", 180, 0, 401800, 09100), 500000, "agente47@axolotl.com, 333657654"
+        /*, il campo varie è facoltativo, composto da immagini*/, [1,2,3]);
+    Annuncio casa02= new Annuncio((2, "via Qualcuno 29", 60, 3, 230600, 09100), 120000, "agente42@axolotl.com, 333877654"
+        /*, il campo varie è facoltativo, composto da immagini*/, [1,4]);
+        //decidere  se lasciare vuoto array in caso di tutti i servizi
+    Annuncio casa03= new Annuncio((1, "via Questa 1", 70, 2, 120700, 09100), 140000, "agente01@axolotl.com, 333011334"
+        /*, il campo varie è facoltativo, composto da immagini*/, [1,2,3,4]);
     
-    Annuncio casa2= new Annuncio((3, "via Annoiata 180", 80, 4, 340800, 09200), 200000, "Agente33@axolotl.com, 325686432"
-        /*, il campo varie è facoltativo, composto da immagini*/);
-        
-    Annuncio casa3= new Annuncio((2, "via Lontana 245", 100, 1, 211000, 09527), 315000, "Agente99@axolotl.com, 347596873"
-        /*, il campo varie è facoltativo, composto da immagini*/);
+    //annunci zona 2
+    Annuncio casa04= new Annuncio((3, "via Annoiata 180", 80, 4, 340800, 09200), 200000, "Agente30@axolotl.com, 333686432"
+        /*, il campo varie è facoltativo, composto da immagini*/, [1,2,3,4]);
+    Annuncio casa05= new Annuncio((1, "via Stanca 20", 57, 1, 110570, 09200), 180000, "Agente22@axolotl.com, 333466432"
+        /*, il campo varie è facoltativo, composto da immagini*/, [1,4]);
+    Annuncio casa06= new Annuncio((5, "via Esaurita 29", 150, 6, 561500, 09200), 423000, "Agente11@axolotl.com, 333116632"
+        /*, il campo varie è facoltativo, composto da immagini*/, [1,3,4]);
+    
+    //annunci zona 3
+    Annuncio casa07= new Annuncio((2, "via Lontana 245", 100, 1, 211000, 09527), 315000, "Agente99@axolotl.com, 333596873"
+        /*, il campo varie è facoltativo, composto da immagini*/, [1,3]);
     //da rivedere se lista.add va qui...
     
 	/*metodi*/
