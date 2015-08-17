@@ -35,7 +35,7 @@ public class Selettore {
     	    String flag;
     	    Scanner scanFlag = new Scanner(System.in);
     	    continua=scanFlag();
-	        int[f]=tipoServizio;
+	        serviziScelti[f]=tipoServizio;
 	        f++;
 	    }
 	       return serviziScelti;
