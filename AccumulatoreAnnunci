@@ -11,8 +11,24 @@ public class AccumulatoreAnnunci {
 	public Vector  myAnnuncio;
 	
 	public static ArrayList<Annuncio> listaAnnuncio=new ArrayList<Annuncio>();//lista degli annunci
+
+	/*costruttori utili (?)
+	 * 1° campo: numero vani, 3° metratura, 4° piano, 5°ID, 6° cap, che verrà usato anche come riferimento zona,
+	 * 7° prezzo.*/
 	
 	
+	Annuncio casa1= new Annuncio((4, "via Qualcosa 5", 180, 0, 401800, 09100), 500000, "agente47@axolotl.com, 333657654"
+        /*, il campo varie è facoltativo, composto da immagini*/);
+    
+    Annuncio casa2= new Annuncio((3, "via Annoiata 180", 80, 4, 340800, 09200), 200000, "Agente33@axolotl.com, 325686432"
+        /*, il campo varie è facoltativo, composto da immagini*/);
+        
+    Annuncio casa3= new Annuncio((2, "via Lontana 245", 100, 1, 211000, 09527), 315000, "Agente99@axolotl.com, 347596873"
+        /*, il campo varie è facoltativo, composto da immagini*/);
+    //da rivedere se lista.add va qui...
+    
+	/*metodi*/
+
 	public static void Inserisci(Annuncio p) //aggiungo annuncio alla lista
 	{ 
 		listaAnnunci.add(p);
