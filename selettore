@@ -1,6 +1,7 @@
 package immobiliare;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Selettore {
 	public Servizi servizio;
@@ -35,10 +36,12 @@ public class Selettore {
     	    String flag;
     	    Scanner scanFlag = new Scanner(System.in);
     	    continua=scanFlag();
-	        serviziScelti[f]=tipoServizio;
-	        f++;
+			serviziScelti[f]=tipoServizio;
+			f++;
 	    }
-	       return serviziScelti;
+	    //ordino in maniera crescente l'array
+	    Array.sort(serviziScelti);
+	    return serviziScelti;
 	} 
 	
 }
