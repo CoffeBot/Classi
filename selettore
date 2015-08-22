@@ -16,7 +16,7 @@ public class Selettore {
 	public static int selezionaZona()
 	{
 	    int sceltaZona;
-	    System.out.println("Seleziona zona:\n 1)Quartiere periferia\t 2))Quartiere centro\t /*altre zone*/");
+	    System.out.println("Seleziona zona:\n 1)Quartiere periferia\t 2)Quartiere centro\t  3)/*altre zone*/");
 	    Scanner sel_zona= new scanner(System.in);
 	    sceltaZona=sel_zona();
 	    return sceltaZona;
@@ -24,24 +24,26 @@ public class Selettore {
 	
 	public static int selezionaServizio()
 	{
-	    int[] serviziScelti;
-	    int tipoServizio;
-	    int f=0;
-	    while(scanFlag=="Si" || scanFlag=="s" || scanFlag=="si")
+		int[] serviziScelti;
+		int tipoServizio;
+		int f=0;
+		
+		do
 	    {
-    	    System.out.println("Servizi in zona:\n 1)Parchi\t 2)Scuole\t 3)Medici\t 4)Ristorant\n /*altri servizi*/");
-    	    Scanner scanServ= new Scanner(System.in);
-    	    tipoServizio=scanServ.nextline();
-    	    System.out.println("vuoi selezionare altri servizi?\n Si\t No\n");
-    	    String flag;
-    	    Scanner scanFlag = new Scanner(System.in);
-    	    continua=scanFlag();
+			System.out.println("Servizi in zona:\n 1)Parchi\t 2)Scuole\t 3)Medici\t 4)Ristorant\n /*altri servizi*/");
+			Scanner scanServ= new Scanner(System.in);
+			tipoServizio=scanServ.nextline();
+			System.out.println("vuoi selezionare altri servizi?\n Si\t No\n");
+			String flag;
+			Scanner scanFlag = new Scanner(System.in);
+			continua=scanFlag();
 			serviziScelti[f]=tipoServizio;
 			f++;
-	    }
+	    }while(scanFlag=="Si" || scanFlag=="s" || scanFlag=="si");
+	    
 	    //ordino in maniera crescente l'array
 	    Array.sort(serviziScelti);
 	    return serviziScelti;
 	} 
-	
+
 }
