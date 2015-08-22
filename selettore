@@ -45,5 +45,20 @@ public class Selettore {
 	    Array.sort(serviziScelti);
 	    return serviziScelti;
 	} 
-
+	
+	public static void main(String[] args)
+	{
+		int a=selezionaZona();
+		int[] b=selezionaServizio();
+		switch(selezionaZona)
+		{
+			case 1:
+			break;
+			case 2;
+			break;
+			case 3;
+			break;
+		}
+	}
+	
 }
