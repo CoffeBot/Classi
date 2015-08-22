@@ -17,8 +17,6 @@ public class GestoreRicerca
         int zonascelta = immobiliare.selettore.selezionaZona();    //ottengo la zona scelta
         int[] servizi  = immobiliare.selettore.selezionaServizio();//ottengo l'array dei servizi selezionati
         
-        /* TODO: aggiungere sistema switch per la zona e per i servizi
-         * TODO: creare una base (4/5 servizi e 3 case)
-         * TODO: far si che dati x servizi escano tali case e viceversa */
+        /* TODO: aggiungere sistema switch per la zona e per i servizi*/
     }
 }
