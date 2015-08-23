@@ -43,7 +43,7 @@ public class AccumulatoreAnnunci //extends Annuncio
     Annuncio casa09= new Annuncio((2, "via Lontana 245", 100, 1, 211000, 09527), 315000, "contatti@axolotl.com, 333596873"
         /*, il campo varie è facoltativo, composto da immagini*/, [1,3]);
     //da rivedere se lista.add va qui...
-    public Annuncio[] zona2 = {casa07, casa08, casa09};
+    public Annuncio[] zona3 = {casa07, casa08, casa09};
     
 	/*metodi*/
 
