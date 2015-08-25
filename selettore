@@ -41,7 +41,7 @@ public class Selettore
 			continua=scanFlag();
 			serviziScelti[f]=tipoServizio;
 			f++;
-	    }while(scanFlag=="Si" || scanFlag=="s" || scanFlag=="si");
+	    }while(scanFlag=="Si" || scanFlag=="s" || scanFlag=="si" || f<4);
 	    
 	    //ordino in maniera crescente l'array
 	    Array.sort(serviziScelti);
