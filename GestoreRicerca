@@ -16,7 +16,59 @@ public class GestoreRicerca
     {
         int zonascelta = immobiliare.selettore.selezionaZona();    //ottengo la zona scelta
         int[] servizi  = immobiliare.selettore.selezionaServizio();//ottengo l'array dei servizi selezionati
-        
-        /* TODO: aggiungere sistema switch per la zona e per i servizi*/
-    }
+
+    	int flag=0;
+    	switch(selezionaZona)
+		{
+		case 1:
+    		//controllo se i servizi richiesti dall'utente siano soddisfatti negli annunci
+    		if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa01.serviziVicini))
+				System.out.println(casa01);
+			else
+    			flag++;
+    		if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa02.serviziVicini))
+    			System.out.println(casa02);
+    		else
+    			flag++;
+			if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa03.serviziVicini))
+				System.out.println(casa03);
+			else
+				flag++;
+			if (flag==3)
+				System.out.println("Nessuna casa disponibile soddisfa i suoi requisiti \n");
+			break;
+			case 2:
+		    if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa04.serviziVicini))
+    			System.out.println(casa04);
+    		else
+    			flag++;
+    		if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa05.serviziVicini))
+    			System.out.println(casa05);
+			else
+				flag++;
+			if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa06.serviziVicini))
+				System.out.println(casa06);
+			else
+				flag++;
+			if (flag==3)
+				System.out.println("Nessuna casa disponibile soddisfa i suoi requisiti \n");
+			break;
+			case 3:
+			if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa07.serviziVicini))
+        		System.out.println(casa07);
+    		else
+    			flag++;
+			if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa08.serviziVicini))
+    			System.out.println(casa08);
+    		else
+    			flag++;
+    		if (Arrays.equals(serviziScelti, AccumulatoreAnnunci.casa09.serviziVicini))
+    			System.out.println(casa09);
+			else
+    			flag++;
+			if (flag==3)
+				System.out.println("Nessuna casa disponibile soddisfa i suoi requisiti \n");
+			break;
+		}
+	}
 }
