@@ -18,7 +18,7 @@ public class Abitazione {
 		this.via=via;
 		this.mq=mq;
 		this.piano=piano;
-		this.identificatore=dentificatore;
+		this.identificatore=identificatore;
 		this.zonaC=zonaC;
 		this.myMessaggio=myMessaggio;
 		this.myAnnuncio=myAnnuncio; 
