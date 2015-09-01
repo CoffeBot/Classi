@@ -4,18 +4,30 @@ import java.util.*;
 
 public class GestoreRicerca
 {
-    public Selettore selettori;
-    
-    public GestoreRicerca(Selettore selettori)
-    {
-        this.selettori=selettori;
-    }
-    
     public static void main(String[] args)
     {
-       int a=Selettore.selezionaZona();
-    	int[] b=Selettore.selezionaServizio();
+    	System.out.println("Seleziona zona:\n 1)Quartiere periferia\t 2)Quartiere centro\t  3)/*altre zone*/");
+    	Scanner sel_zona= new scanner(System.in);
+	    sceltaZona=sel_zona();
+    	Selettore.selezionaZona(sceltaZona);
+    	
+    	do
+	    {
+			System.out.println("Servizi in zona:\n 1)Parchi\t 2)Scuole\t 3)Medici\t 4)Ristorant\n /*altri servizi*/");
+			Scanner scanServ= new Scanner(System.in);
+			tipoServizio=scanServ.nextline();
+			System.out.println("vuoi selezionare altri servizi?\n Si\t No\n");
+			String flag;
+			Scanner scanFlag = new Scanner(System.in);
+			continua=scanFlag();
+			serviziScelti[f]=tipoServizio;
+			f++;
+	    }while(scanFlag=="Si" || scanFlag=="s" || scanFlag=="si" || f<4);
+    	
+    	Selettore.selezionaServizio(int [] serviziScelti);
     	int flag=0;
+    	
+    	//lo switch serve per individuare le case di una zona precisa. 
    		switch(selezionaZona)
    		{
 		case 1:
