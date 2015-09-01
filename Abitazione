@@ -8,11 +8,9 @@ public class Abitazione {
 	public int piano;
 	public int identificatore;
 	public int zonaC; //va a rappresentare il cap della zona
-	public Vector  myMessaggio;
-	public Vector  myAnnuncio;
-	
+
 	public Abitazione(int nVani, String via, int mq, int piano, int identificatore,
-		int zonaC, Vector  myMessaggio, Vector  myAnnuncio)
+		int zonaC)
 	{
 		this.nVani=nVani;
 		this.via=via;
@@ -20,8 +18,6 @@ public class Abitazione {
 		this.piano=piano;
 		this.identificatore=identificatore;
 		this.zonaC=zonaC;
-		this.myMessaggio=myMessaggio;
-		this.myAnnuncio=myAnnuncio; 
 	}
 
 }
