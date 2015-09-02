@@ -6,9 +6,9 @@ public class Utente extends Anagrafica
 {
 	public int userID;
   	
-  	public Utente (int userID)
+  	public Utente (int userID, String nome, String cognome, String email, int telefono )
   	{
-  		super (String nome, String cognome, String email, int telefono );
+  		super (nome, cognome, email,telefono);
   		this.userID=userID;
   	}
 
