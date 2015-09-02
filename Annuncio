@@ -1,33 +1,22 @@
 package immobiliare;
-import java.util.Vector;
-
-public class Annuncio{
-
-  private Abitazione caratteristica;
+//DA CORREGGERE 
+public class Annuncio extends Abitazione
+{
   public int prezzo;
   public String contatti;
-  public Varie[] cose; //conterrà immagini relative all'abitazione
   public int[] serviziVicini= new array[4];
+  super( nVani, via, mq, piano, identificatore, zonaC);
 
-  public Vector  myAccumulatoreAnnunci;
-  public Vector  myMessaggio;
-  public Vector  myAbitazione;
-
-  public Annuncio ( Abitazione caratteristica, int prezzo, String contatti, Varie, 
-        Vector  myAccumulatoreAnnunci, Vector  myMessaggio, Vector  myAbitazione)
+public Annuncio ( Abitazione caratteristica, int prezzo, String contatti)
   {
     this.caratteristica=caratteristica;
     this.prezzo=prezzo;
     this.contatti=contatti;
-    this.Varie=varie;
-    this.myAccumulatoreAnnunci=myAccumulatoreAnnunci;
-    this.myMessaggio=myMessaggio;
-    this.myAbitazione=myAbitazione;
-    
   }
+/*
   public void ContattaAgente(Messaggio u) 
   {
     Annunci.ContattaAgente.send(u);
   }
-
-}
+*/
+super( nVani, via, mq, piano, identificatore, zonaC);
